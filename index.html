@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit App</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Nav Start -->
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="/assets/image/main-logo.svg" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#habitshero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#habitfeature">Feature</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#habit-slider">Showcase</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#habitfaq">Faq</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blog-page.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="nav-social-link">
+                <a class="nav-link" href="#"><i class='bx bxl-facebook-circle' undefined ></i>
+                </a>
+                <a class="nav-link" href="#"><i class='bx bxl-instagram-alt'></i>
+                </a>
+                <a class="nav-link" href="#"><i class='bx bxl-twitter'></i>
+                </a>
+                
+
+                <a class="nav-link" href="#"><i class='bx bxs-cog'></i>
+              </a>
+              
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!-- Nav End -->
+
+    <!-- Hero Start -->
+    <section id="habitshero">
+      <div class="container">
+        <div class="row gx-2 gy-5">
+          <div class="col-lg-6">
+            <div class="habits-hero-head">
+              <h1>Sed Imperdiet Enim li<br class="habits-hero-head-br">Vitae <span>Viverra Justo</span></h1>
+              <p>Nam sollicitud nunc, cursus eros vulputate sed. Vestibulum sit amet tortor sit amet libero lobortis.</p>
+            </div>
+            <div class="hero-download-link">
+              <a href="#">
+                <img src="/assets/image/Apple.png" alt="Habits Apple Icon">
+              </a>
+              <a href="#">
+                <img src="/assets/image/Google.png" alt="Habits Google Icon">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 hero-mobile-image">
+            <img class="img-fluid" src="/assets/image/hero-mobile-image.png" alt="Hero Picture">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero End -->
+    
+    <!-- Habits Number Counting Start -->
+    <section id="counters-section">
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-md-4">
+            <div class="habits-number-counting">
+              <h3>+<span class="count" data-target="200">0</span>M</h3>
+              <div class="habits-number-content">
+                <span><svg style="margin-bottom: 10px;margin-right: 4px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 56 53" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.2298 42.0643L18.7831 43.4949L28.0748 52.7059L37.3666 43.4949L35.9198 42.0643L29.0975 48.8157V18.4345H27.0521V48.8157L20.2298 42.0643Z" fill="black" fill-opacity="0.54"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M45.9225 14.858C45.9225 14.7075 45.9474 14.5694 45.9474 14.4188C45.9474 6.4502 39.3497 0 31.3799 0C25.6303 0 20.6788 3.36314 18.359 8.20706C17.3488 7.7051 16.2263 7.41647 15.0165 7.41647C11.3247 7.41647 8.26904 10.3404 7.67037 13.8541C3.28017 15.36 0.112244 19.3004 0.112244 24.1945C0.112244 30.3561 5.11358 35.3882 11.2873 35.3882H22.6993V33.3804H11.3871C6.28596 33.3804 2.13273 29.2141 2.13273 24.1318C2.13273 20.1914 4.65211 16.9161 8.39376 15.6361L9.44142 15.2847L9.6285 14.1929C10.0775 11.52 12.3848 9.32392 15.1038 9.32392C15.9644 9.32392 16.8125 9.52471 17.5857 9.91373L19.2695 10.7545L20.0802 9.04784C22.1506 4.73098 26.5782 1.9451 31.355 1.9451C38.2521 1.9451 43.9394 7.31608 43.9394 14.1929C43.9394 15.8369 43.9145 16.7153 43.9145 16.7153L45.8102 16.7278C50.3875 16.7906 53.992 20.4925 53.992 25.0604C53.992 29.6157 50.2753 33.3553 45.698 33.3804L45.2989 33.3929H33.1759V35.4008H45.7728C51.3853 35.4008 55.9875 30.7325 55.9875 25.098C55.9875 19.451 51.5724 14.8706 45.9225 14.858Z" fill="black" fill-opacity="0.54"/>
+                  </svg>
+                </span>
+                <span>Download</span>
+              </div>
+
+              <svg class="habits-number-border" xmlns="http://www.w3.org/2000/svg" width="3" height="54" viewBox="0 0 3 152" fill="none">
+                <path d="M1.5 1.5V150" stroke="#D1C4E9" stroke-width="3" stroke-linecap="square"/>
+              </svg>
+            </div>
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="habits-number-counting">
+              <h3>+<span class="count" data-target="480">480</span>M</h3>
+              <div class="habits-number-content">
+                <span><svg style="margin-bottom: 10px;margin-right: 4px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 58 58" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M40.5997 17.5757L23.1493 35.1879L16.5495 28.5746L14.0606 31.0686L21.8909 38.9149C22.2405 39.2652 22.7159 39.5454 23.1353 39.5454C23.5548 39.5454 24.0162 39.2652 24.3658 38.9289L43.0606 20.0978L40.5997 17.5757Z" fill="black" fill-opacity="0.54"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M29 0C12.9803 0 0 12.9803 0 29C0 45.0197 12.9803 58 29 58C45.0197 58 58 45.0197 58 29C58 12.9803 45.0197 0 29 0ZM29 55.588C14.3466 55.588 2.41202 43.6673 2.41202 29C2.41202 14.3466 14.3327 2.41202 29 2.41202C43.6534 2.41202 55.588 14.3327 55.588 29C55.588 43.6534 43.6534 55.588 29 55.588Z" fill="black" fill-opacity="0.54"/>
+                  </svg>
+                </span>
+                <span>Transaction</span>
+              </div>
+
+              <svg class="habits-number-border" xmlns="http://www.w3.org/2000/svg" width="3" height="54" viewBox="0 0 3 152" fill="none">
+                <path d="M1.5 1.5V150" stroke="#D1C4E9" stroke-width="3" stroke-linecap="square"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="habits-number-counting">
+              <h3>+<span class="count" data-target="180">180</span>M</h3>
+              <div class="habits-number-content">
+                <span><svg style="margin-bottom: 10px;margin-right: 4px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 56 54" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M56 20.9182H34.575L28 0.982758L21.425 20.9182H0L17.525 33.1852L10.7 53.1207L28 40.766L45.3 53.1207L38.4625 33.1852L56 20.9182ZM41.325 47.7578L28 38.2349L14.675 47.7578L20 32.4084L6.5 23.0483H22.875L28 7.59867L33.125 23.0483H49.5L36 32.3958L41.325 47.7578Z" fill="black"/>
+                  </svg>
+                </span>
+                <span>Rattings</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- Habits Number Counting End -->
+
+
+    <!-- Feature Start -->
+    <section id="habitfeature">
+      <div class="container">
+
+        <div class="habit-feature-head">
+          <h3>Feature</h3>
+        </div>
+
+        <div class="row habit-feature-main gx-4 gy-4">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="/assets/image/Bitmap.png" alt="Habit Feature Content">
+          </div>
+
+          <div class="col-lg-6 habit-feature-content">
+            <h4><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 35 35" fill="none">
+              <circle cx="17.5" cy="17.5" r="17.5" fill="#B2EBF2"/>
+            </svg> <span>Vivamus sit amet interdum</span></h4>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo adipisci unde dolor quae, atque veritatis porro reprehenderit sit cumque numquam, harum ratione ipsa aliquam deserunt magni repellendus corrupti consequuntur ab?</p>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Feature End -->
+
+
+
+
+
+    <!-- Feature Two Start -->
+    <section id="featuretwo">
+      <div class="container">
+        <div class="row gx-4 gy-2 featuretwo-content">
+          <div class="col-lg-6 habit-feature-content">
+            <h4><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 35 35" fill="none">
+              <circle cx="17.5" cy="17.5" r="17.5" fill="#B2EBF2"/>
+            </svg> <span>Vivamus sit amet interdum</span></h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo adipisci unde dolor quae, atque veritatis porro reprehenderit sit cumque numquam, harum ratione ipsa aliquam deserunt magni repellendus corrupti consequuntur ab?</p>
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="/assets/image/Bitmap.png" alt="Habit Feature Content">
+          </div>
+        </div>
+
+
+
+        <!-- Habit Video Start -->
+        <div class="habit-feature-head habit-video-after">
+          <h3>Vivamus sit amet</h3>
+        </div>
+        <section id="habitvideo">
+  <div class="containervideo show-controls">
+    <div class="wrapper">
+        <div class="video-timeline">
+            <div class="progress-area">
+                <span>00:00</span>
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <ul class="video-controls">
+            <li class="options left">
+                <button class="volume"><i class="fa-solid fa-volume-high"></i></button>
+                <input type="range" min="0" max="1" step="any">
+                <div class="video-timer">
+                    <p class="current-time">00:00</p>
+                    <p class="separator"> / </p>
+                    <p class="video-duration">00:00</p>
+                </div>
+            </li>
+            <li class="options center">
+                <button class="skip-backward"><i class="fas fa-backward"></i></button>
+                <button class="play-pause"><i class="fas fa-play"></i></button>
+                <button class="skip-forward"><i class="fas fa-forward"></i></button>
+            </li>
+            <li class="options right">
+                <div class="playback-content">
+                    <button class="playback-speed"><span class="material-symbols-rounded">slow_motion_video</span></button>
+                    <ul class="speed-options">
+                        <li data-speed="2">2x</li>
+                        <li data-speed="1.5">1.5x</li>
+                        <li data-speed="1" class="active">Normal</li>
+                        <li data-speed="0.75">0.75x</li>
+                        <li data-speed="0.5">0.5x</li>
+                    </ul>
+                </div>
+                <button class="pic-in-pic"><span class="material-icons">picture_in_picture_alt</span></button>
+                <button class="fullscreen"><i class="fa-solid fa-expand"></i></button>
+            </li>
+        </ul>
+    </div>
+    <video src="/assets/vid/habit-vid.mp4"></video>
+</div>
+
+        </section>
+        <!-- Habit Video End -->
+
+
+        <!-- Habit Slider Start -->
+        <div class="habit-feature-head">
+          <h3>Vivamus sit amet</h3>
+        </div>
+        <section id="habit-slider">
+          
+
+          <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="/assets/image/slider-image-two.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="/assets/image/slider-image-three.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="/assets/image/slider-image-two.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="/assets/image/slider-image-three.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="/assets/image/slider-image-two.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="/assets/image/slider-image-three.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="/assets/image/slider-image-two.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="/assets/image/slider-image-three.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="/assets/image/slider-image-two.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="/assets/image/slider-image-three.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="/assets/image/slider-image-two.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="/assets/image/slider-image-three.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="/assets/image/slider-image-two.png" alt="">
+      </div>
+      <!-- 15 div -->
+    </div>
+  </div>
+
+
+        </section>
+        <!-- Habit Slider End -->
+        <div id="habit-testimonials">
+          <div class="habit-feature-head">
+            <h3>Testimonials</h3>
+          </div>
+
+
+         <div class="testimonial-text">
+
+          <div class="habit-feature-head user-text">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ipsa quasi, veniam neque corrupti provident est vel fugit laborum consectetur..</p>
+
+            <h5><span>John</span>Co Founder Luxi Theme</h5>
+          </div>
+          <div class="habit-feature-head user-text">
+            <p>Lorem ipsum dolor sit amet..</p>
+
+            <h5><span>Maxwell</span>Co Founder Luxi Theme</h5>
+          </div> 
+          <div class="habit-feature-head user-text active-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, commodi. Illo saepe magnam adipisci nesciunt modi, vel dolor ut voluptas, beatae voluptatum, odit odio dignissimos recusandae suscipit exercitationem. Consequuntur, eaque?</p>
+
+            <h5><span>Sami</span>Co Founder Luxi Theme</h5>
+          </div>
+          <div class="habit-feature-head user-text">
+            <p>Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet.</p>
+
+            <h5><span>Pablo</span>Co Founder Luxi Theme</h5>
+          </div>
+          <div class="habit-feature-head user-text">
+            <p>Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet.</p>
+
+            <h5><span>Poli</span>Co Founder Luxi Theme</h5>
+          </div>
+         </div>
+         <div class="testimonial-pic">
+          <img src="/assets/image/testimonials-picture-one.png" alt="Habit User Picture" class="user-pic" onclick="showReview()">
+          <img src="/assets/image/testimonials-picture-one.png" alt="Habit User Picture" class="user-pic" onclick="showReview()">
+          <img src="/assets/image/testimonials-picture-one.png" alt="Habit User Picture" class="user-pic active-pic" onclick="showReview()">
+          <img src="/assets/image/testimonials-picture-one.png" alt="Habit User Picture" class="user-pic" onclick="showReview()">
+          <img src="/assets/image/testimonials-picture-one.png" alt="Habit User Picture" class="user-pic" onclick="showReview()">
+        </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- Habit Faq Start -->
+    <section id="habitfaq">
+      <div class="container">
+        <div class="habit-feature-head text-start">
+          <h3>FAQ</h3>
+        </div>
+        <div class="row gx-5 gy-4 mt-2">
+          <div class="col-md-6">
+            <div class="habitfaq-content">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, veniam.</p>
+            </div>
+            <div class="habitfaq-content-img">
+              <img class="img-fluid" src="/assets/image/habit-faq.png" alt="Habit Faq Content Image">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="habitfaq-content-accordion">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Pellentesque ac bibendum tortor?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      In mi nulla, fringilla vestibulum?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Quisque lacinia purus ut libero?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      Quisque ut metus sit amet augue?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      Pellentesque ac bibendum tortor?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSix" class="accordion-collapse collapse">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        
+
+      </div>
+
+    </section>
+    <!-- Habit Faq End -->
+
+
+
+
+
+    <!-- Sliding logo Start -->
+    <section id="habit-sliding">
+      <div class="habit-sliding-head">
+        <h3>Nulla lobortis nunc vitae nisi</h3>
+      </div>
+    </section>
+    <section id="sliding">
+      <div class="logos">
+          <div class="logos-slide">
+              <img src="/assets/image/sliding-icon/s-one.png" alt="Habit Sliding Picture">
+              <img src="/assets/image/sliding-icon/s-two.png" alt="Habit Sliding Picture">
+              <img src="/assets/image/sliding-icon/s-three.png" alt="Habit Sliding Picture">
+              <img src="/assets/image/sliding-icon/s-four.png" alt="Habit Sliding Picture">
+              <img src="/assets/image/sliding-icon/s-five.png" alt="Habit Sliding Picture">
+              <img src="/assets/image/sliding-icon/s-six.png" alt="Habit Sliding Picture">
+              <img src="/assets/image/sliding-icon/s-seven.png" alt="Habit Sliding Picture">
+              <img src="/assets/image/sliding-icon/s-eight.png" alt="Habit Sliding Picture">
+          </div>
+          <div class="logos-slide">
+              <img src="/assets/image/sliding-icon/s-one.png" alt="Habit Sliding Picture">
+              <img src="/assets/image/sliding-icon/s-two.png" alt="Habit Sliding Picture">
+              <img src="/assets/image/sliding-icon/s-three.png" alt="Habit Sliding Picture">
+              <img src="/assets/image/sliding-icon/s-four.png" alt="Habit Sliding Picture">
+              <img src="/assets/image/sliding-icon/s-five.png" alt="Habit Sliding Picture">
+              <img src="/assets/image/sliding-icon/s-six.png" alt="Habit Sliding Picture">
+              <img src="/assets/image/sliding-icon/s-seven.png" alt="Habit Sliding Picture">
+              <img src="/assets/image/sliding-icon/s-eight.png" alt="Habit Sliding Picture">
+          </div>
+      </div>
+  </section>
+  <!-- Sliding logo End -->
+
+
+
+
+
+  <!-- Habit Latest News Start -->
+  <section id="habit-news">
+    <div class="container">
+      <div class="habit-feature-head">
+        <h3>Latest News</h3>
+      </div>
+
+      <div class="row habit-news-main">
+        <div class="col-xl-6">
+          <div class="habit-latestpart-one shadow-sm">
+            <img src="/assets/image/blog-one.jpg" alt="Habit News Picture">
+            <span>HEADLINE</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, qui.</p>
+            <a target="_blank" href="/blog-one.html">Read More</a>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <div class="habit-newspart-two-main">
+            <div class="habit-newspart-two shadow-sm">
+              <img src="/assets/image/blog-one.jpg" alt="Habit News Picture">
+              <div class="habit-latestpart-one">
+               <span>HEADLINE</span>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, qui.</p>
+               <a href="#">Read More</a>
+            </div>
+           </div>
+          </div>
+          <div class="habit-newspart-two-main mt-3">
+            <div class="habit-newspart-two shadow-sm">
+              <img src="/assets/image/blog-one.jpg" alt="Habit News Picture">
+              <div class="habit-latestpart-one">
+               <span>HEADLINE</span>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, qui.</p>
+               <a href="#">Read More</a>
+            </div>
+           </div>
+          </div>
+
+          <div class="habit-newspart-two-main mt-3">
+            <div class="habit-newspart-two shadow-sm">
+              <img src="/assets/image/blog-one.jpg" alt="Habit News Picture">
+              <div class="habit-latestpart-one">
+               <span>HEADLINE</span>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, qui.</p>
+               <a href="#">Read More</a>
+            </div>
+           </div>
+          </div>
+          
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+  <!-- Habit Latest News End -->
+
+
+
+
+    <!-- Habit Footer Start -->
+    <section id="habitfooter">
+      <div class="container">
+
+        <h5>What are you waiting for? Download Now!</h5>
+
+        <div class="habit-footer-applink">
+          <a href="#">
+            <img src="/assets/image/Apple.png" alt="Habit AppStore Download">
+          </a> 
+          <a href="#">
+            <img src="/assets/image/Google.png" alt="Habit AppStore Download">
+          </a>
+        </div>
+
+
+        <div class="habit-footer-grid">
+
+          <div class="habit-footer-one">
+            <a href="#"><img src="/assets/image/habit-logo-white.svg" alt="Habit Logo"></a>
+            <p>&copy; Habit Theme 2019</p>
+          </div>
+
+          <div class="habit-footer-two">
+            <div class="habit-footer-content">
+              <h6>COMPANY</h6>
+              <a href="#">Donec dignissim</a>
+              <a href="#">Curabitur egestas</a>
+              <a href="#">Nam posuere</a>
+              <a href="#">Aenean facilisis</a>
+            </div>
+          </div>
+
+          <div class="habit-footer-three">
+            <div class="habit-footer-content">
+              <h6>Services</h6>
+              <a href="#">Cras convallis</a>
+              <a href="#">Vestibulum faucibus</a>
+              <a href="#">Quisque lacinia purus</a>
+              <a href="#">Aliquam nec ex</a>
+            </div>
+          </div>
+
+          <div class="habit-footer-four">
+            <div class="habit-footer-content">
+              <h6>Legal</h6>
+              <a target="_blank" href="/privacy-policy.html">Privacy and Policy</a>
+              <a target="_blank" href="/terms-conditions.html">Terms and Conditions</a>
+              <a href="#">Curabitur egestas </a>
+            </div>
+          </div>
+
+          <div class="habit-footer-five">
+            <div class="habit-footer-linked">
+              <div>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 75 75" fill="none">
+                  <circle cx="37.5" cy="37.5" r="37.5" fill="#00BCD4"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M41.3333 28.6667V23.7057C41.3333 21.4661 41.8479 20.3333 45.4635 20.3333H50V12H42.4302C33.1542 12 30.0938 16.0885 30.0938 23.1068V28.6667H24V37H30.0938V62H41.3333V37H48.9708L50 28.6667H41.3333Z" fill="white"/>
+                </svg>
+              </a>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 75 75" fill="none">
+                  <circle cx="37.5" cy="37.5" r="37.5" fill="#00BCD4"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M53.1211 20H23.0758C21.4347 20 20 21.1816 20 22.8039V52.9148C20 54.5465 21.4347 56 23.0758 56H53.1117C54.7621 56 55.9999 54.5371 55.9999 52.9148V22.8039C56.0093 21.1816 54.7621 20 53.1211 20ZM31.1591 50.0078H26.0016V33.9724H31.1591V50.0078ZM28.7585 31.5343H28.721C27.0706 31.5343 26.0016 30.3058 26.0016 28.7679C26.0016 27.2019 27.0987 26.0016 28.7866 26.0016C30.4746 26.0016 31.5061 27.1925 31.5436 28.7679C31.5436 30.3058 30.4746 31.5343 28.7585 31.5343ZM50.0078 50.0078H44.8502V41.2399C44.8502 39.1394 44.1 37.7046 42.2339 37.7046C40.8085 37.7046 39.9645 38.6705 39.5894 39.6082C39.4488 39.9458 39.4113 40.4053 39.4113 40.8742V50.0078H34.2537V33.9724H39.4113V36.2042C40.1615 35.1352 41.3336 33.5973 44.0625 33.5973C47.4477 33.5973 50.0078 35.8291 50.0078 40.6397V50.0078Z" fill="white"/>
+                </svg>
+              </a>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 75 75" fill="none">
+                  <circle cx="37.5" cy="37.5" r="37.5" fill="#00BCD4"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M58 25.7917C56.5251 26.4333 54.9485 26.8667 53.2871 27.0667C54.9824 26.0667 56.2878 24.4833 56.8981 22.6C55.313 23.525 53.5584 24.2 51.6851 24.5583C50.1848 22.9833 48.0487 22 45.6923 22C41.1574 22 37.4872 25.6167 37.4872 30.075C37.4872 30.7083 37.555 31.325 37.6991 31.9167C30.8756 31.5833 24.8235 28.3667 20.7803 23.475C20.0767 24.6667 19.6698 26.0583 19.6698 27.5333C19.6698 30.3333 21.1278 32.8083 23.3316 34.2583C21.9754 34.225 20.704 33.8583 19.602 33.25C19.602 33.2833 19.602 33.3167 19.602 33.35C19.602 37.2667 22.4331 40.525 26.1882 41.2667C25.5016 41.45 24.7726 41.55 24.0267 41.55C23.5012 41.55 22.9841 41.5 22.484 41.4C23.5266 44.6083 26.5611 46.9417 30.1551 47.0083C27.3494 49.175 23.8063 50.4667 19.958 50.4667C19.2969 50.4667 18.6442 50.425 18 50.35C21.6194 52.6667 25.9339 54 30.562 54C45.6754 54 53.9313 41.6917 53.9313 31.0167C53.9313 30.6667 53.9229 30.3167 53.9059 29.975C55.5079 28.8333 56.8981 27.4167 58 25.7917Z" fill="white"/>
+                </svg>
+              </a>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 75 75" fill="none">
+                  <circle cx="37.5" cy="37.5" r="37.5" fill="#00BCD4"/>
+                  <circle cx="37.5" cy="38" r="7" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M31.2547 30.6761C33.0679 28.8629 35.4786 27.8537 38.0428 27.8537C40.6071 27.8537 43.0178 28.8683 44.831 30.6815C45.9814 31.8319 46.8034 33.2144 47.2509 34.7573H54.4571V25.0715C54.4571 22.7993 52.7008 21.043 50.4286 21.043H25.7428C23.4706 21.043 21.5428 22.7993 21.5428 25.0715V34.7573H28.8347C29.2823 33.2144 30.1042 31.8266 31.2547 30.6761ZM51.7143 28.1744C51.7143 28.7803 51.2231 29.2715 50.6171 29.2715H47.3257C46.7198 29.2715 46.2286 28.7804 46.2286 28.1744V24.883C46.2286 24.2771 46.7197 23.7858 47.3257 23.7858H50.6171C51.223 23.7858 51.7143 24.277 51.7143 24.883V28.1744Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M44.831 44.2525C43.0178 46.0657 40.6071 47.0535 38.0428 47.0535C35.4786 47.0535 33.0679 46.0711 31.2547 44.2579C29.4448 42.448 28.4468 39.9857 28.443 37.5H21.5428V49.7571C21.5428 52.0294 23.4706 53.9571 25.7428 53.9571H50.4286C52.7008 53.9571 54.4571 52.0294 54.4571 49.7571V37.5H47.6427C47.639 39.9857 46.6409 42.4426 44.831 44.2525Z" fill="white"/>
+                </svg>
+              </a>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg style="margin-bottom: 4px; margin-right: 8px;" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 39 39" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5 0C8.73038 0 0 8.73047 0 19.5C0 30.2695 8.73038 39 19.5 39C30.2695 39 39 30.2695 39 19.5C39 8.73047 30.2695 0 19.5 0ZM17.4798 36.0937C13.78 35.6506 10.3568 33.9944 7.68113 31.3188C4.52419 28.1618 2.78569 23.9646 2.78569 19.5C2.78569 15.4809 4.19531 11.679 6.77953 8.65697C6.84609 9.45544 7.01044 10.3115 6.96834 10.9234C6.81459 13.1542 6.59447 14.5503 7.90022 16.4323C8.40891 17.1653 8.53388 18.2162 8.78147 19.0646C9.02363 19.8947 9.99103 20.3301 10.6582 20.8415C12.0044 21.8736 13.2922 23.0732 14.7197 23.9815C15.6618 24.5811 16.2502 24.8793 15.9743 26.0289C15.7524 26.9535 15.6905 27.523 15.2122 28.3467C15.0662 28.5981 15.7631 30.214 15.9951 30.446C16.698 31.1488 17.3955 31.7936 18.1617 32.4264C19.3496 33.4079 18.0463 34.6832 17.4798 36.0937ZM31.3188 31.3188C28.9157 33.7219 25.9095 35.3018 22.6417 35.9201C23.1048 34.7749 23.9294 33.7573 24.6943 33.1674C25.3597 32.6541 26.193 31.6666 26.5405 30.8844C26.8878 30.1033 27.3478 29.4262 27.8134 28.7078C28.4757 27.6861 26.1803 26.1451 25.4365 25.8221C23.7627 25.0955 22.5027 24.1149 21.0152 23.0682C19.9553 22.3225 17.8036 23.4577 16.6071 22.9354C14.9682 22.2198 13.618 20.9764 12.1935 19.9036C10.7235 18.7965 10.7946 17.5058 10.7946 15.8726C11.946 15.9151 13.584 15.554 14.3484 16.4799C14.5897 16.7722 15.4191 18.0776 15.9742 17.6138C16.4278 17.2347 15.6382 15.7154 15.4856 15.3582C15.0164 14.2599 16.5548 13.8316 17.3422 13.0868C18.3697 12.1152 20.5737 10.5914 20.3995 9.89494C20.2253 9.19847 18.1942 7.22522 17.0012 7.53309C16.8224 7.57922 15.2483 9.22969 14.9442 9.48862C14.9523 8.94994 14.9603 8.41134 14.9686 7.87266C14.9738 7.53253 14.3341 7.18341 14.3638 6.96403C14.4388 6.40959 15.9821 5.40338 16.366 4.96181C16.0971 4.79372 15.1792 4.00537 14.9015 4.12106C14.2289 4.40137 13.4693 4.5945 12.7968 4.87472C12.7968 4.64147 12.7685 4.42237 12.7347 4.206C14.0825 3.60928 15.5085 3.19434 16.9825 2.973L18.3029 3.50362L19.2352 4.60997L20.1655 5.56931L20.9788 5.83134L22.2706 4.61306L21.9375 3.74334V2.96156C24.4922 3.33262 26.9047 4.28569 29.0177 5.75531C28.6397 5.78916 28.2243 5.84475 27.7556 5.90438C27.562 5.79 27.3137 5.73806 27.1027 5.65847C27.7149 6.97491 28.3536 8.27316 29.0024 9.57216C29.6955 10.9598 31.233 12.4481 31.503 13.9129C31.8212 15.6394 31.6004 17.2076 31.7745 19.2389C31.9421 21.195 33.9799 23.4175 33.9799 23.4175C33.9799 23.4175 34.9208 23.7381 35.7034 23.6264C34.9739 26.5123 33.4784 29.159 31.3188 31.3188Z" fill="#D1C4E9"/>
+                    </svg>English - En <svg style="margin-left: 14px; margin-bottom: 2px;" xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 30 17" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 11.2831L26.6671 0.20464C26.9551 -0.0736471 27.4306 -0.0670213 27.7253 0.217892L29.7747 2.19903C30.0694 2.48394 30.0761 2.94775 29.7881 3.22604L15.5425 16.7561C15.3952 16.9019 15.1942 16.9681 15 16.9549C14.7991 16.9615 14.6048 16.8952 14.4575 16.7561L0.211874 3.22604C-0.0761193 2.94775 -0.0694218 2.48394 0.225269 2.19903L2.27471 0.217892C2.5694 -0.0670213 3.04493 -0.0736471 3.33292 0.20464L15 11.2831Z" fill="#D1C4E9"/>
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Italian</a></li>
+                  <li><a class="dropdown-item" href="#">Spanish</a></li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+
+    </section>
+    <!-- Habit Footer End -->
+
+
+
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+     <!-- Swiper JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/videoscript.js"></script>
+</body>
+</html>
